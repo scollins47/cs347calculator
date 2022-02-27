@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1> Javascript Calculator </h1>
+    </div>
+    <div id="calculator">
+        <table>
+            <tbody>
+                <tr > 
+                    <td id="ans">
+                        <input type="text" id="answer" value="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="openParen"><button onclick="number('(')">(</button></td>
+                    <td id="closeParen"><button onclick="number(')')">)</button></td>
+                    <td id="mod"><button onclick="number('%')">%</button></td>
+                    <td id="clear"><button onclick='allclear()'>AC</button></td>
+                </tr>
+                <tr>
+                    <td class="number"><button onclick="number(7)">7</button></td>
+                    <td class="number"><button onclick="number(8)">8</button></td>
+                    <td class="number"><button onclick="number(9)">9</button></td>
+                    <td class="divide"><button onclick="number('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td class="number"><button onclick="number(4)">4</button></td>
+                    <td class="number"><button onclick="number(5)">5</button></td>
+                    <td class="number"><button onclick="number(6)">6</button></td>
+                    <td id="multiply"><button onclick="number('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td class="number"><button onclick="number(1)">1</button></td>
+                    <td class="number"><button onclick="number(2)">2</button></td>
+                    <td class="number"><button onclick="number(3)">3</button></td>
+                    <td id="subtract"><button onclick="number('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td class="number"><button onclick="number(0)">0</button></td>
+                    <td id="decimal"><button onclick="number('.')">.</button></td>
+                    <td id="equals"><button onclick="calculate()">=</button></td>
+                    <td id="add"><button onclick="number('+')">+</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
